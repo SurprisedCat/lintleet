@@ -12,10 +12,10 @@ class Solution {
      * return: An integer, denote the number of trailing zeros in n!
      */
     public long trailingZeros(long n) {
-      int count5 = 0;
-      for(int i=5;i<=n;i=i+5)
+      long count5 = 0;
+      for(long i=5;i<=n;i=i+5)
       {
-        int j = i;
+        long j = i;
         while(j!= 0 && j%5 == 0)
         {
           count5++;
@@ -27,7 +27,7 @@ class Solution {
 
     public long trailingZerosOpt(long n)
     {
-      int count5 = 0;
+      long count5 = 0;
       while(n/5>0)
       {
           count5+= n/5;

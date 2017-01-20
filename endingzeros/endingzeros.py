@@ -12,7 +12,6 @@ class Solution:
             i+=5
         return count5
     def trailingZerosOpt(self, n):
-        i = 0
         count5 = 0
         while n>0:
             count5+=n/5
