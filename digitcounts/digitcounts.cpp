@@ -10,13 +10,13 @@ public:
     	int digit = 0;
         for(int i = 0; i <= n; i++){
 	    	int j = i;
-	    	do{	
+	    	do{
 	    		if(j % 10 == k)
 	    		{
 	    			digit++;
 	    		}
 	    		j /= 10;
-	    	}while(j > 0);	
+	    	}while(j > 0);
 		}
 		return digit++;
     }
